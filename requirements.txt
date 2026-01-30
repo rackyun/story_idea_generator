@@ -1,0 +1,11 @@
+streamlit
+openai
+pyyaml
+crewai
+# 数据库（SQLite 为 Python 内置）
+# 导出功能
+ebooklib
+weasyprint
+markdown
+# 统计和可视化
+plotly
