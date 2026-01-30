@@ -3,3 +3,23 @@ llm:
   base_url: "https://your-api-endpoint/v1"
   api_key: "your-api-key"
   model: "your-model-name"
+
+# 智能体模型配置
+# 每个智能体可以指定不同的模型，如果未指定则使用 llm.model 作为默认值
+agents:
+  chief_editor: "gemini-3-pro-preview" # 总编代理
+  idea_stormer: "grok-4.1" # 脑洞代理
+  plot_weaver: "grok-4.1" # 剧情代理
+  character_builder: "claude-sonnet-4-5-20250929" # 角色代理
+  scene_painter: "claude-sonnet-4-5-20250929" # 场景代理
+  climax_optimizer: "grok-4.1" # 爽点代理
+  punchline_king: "deepseek-v3.2" # 爆梗王
+  consistency_checker: "gemini-3-pro-preview" # 编辑代理
+  story_writer: "claude-sonnet-4-5-20250929" # 核心写手
+  outline_architect: "gemini-3-pro-preview" # 大纲架构师
+  format_editor: "claude-haiku-4-5-20251001" # 格式编辑专家
+
+# 骰子选项获取功能模型配置
+# 如果未指定则使用 llm.model 作为默认值
+dice_options:
+  model: "grok-4-deepsearch" # 骰子选项生成专用模型（推荐使用快速、经济的模型）
